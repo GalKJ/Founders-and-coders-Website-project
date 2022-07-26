@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Carousel styles */
+.carousel-container {
+    border: 2px solid rgb(115, 69, 255);
+    width: 700px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 700px;
+}
+
+#prev-btn {
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    z-index: 10;
+    font-size: 30px;
+    color: rgb(115, 69, 255);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#next-btn {
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    z-index: 10;
+    font-size: 30px;
+    color: rgb(115, 69, 255);
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* End of carousel styles */
+
+
