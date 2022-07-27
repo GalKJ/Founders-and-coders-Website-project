@@ -128,6 +128,30 @@ p {
       transform: scale(1) rotate3d(-1, 1, 0, 360deg);
     }
   }
+
+#blob-button-div {
+    /* put blob and button in grid */
+}
+
+#blob-button-one {
+        background: linear-gradient(33deg, rebeccapurple, hotpink);
+        transition: all 1s ease;
+        padding: 1rem;
+        border: 0;
+        border: 2px solid transparent;
+        text-decoration: none;
+        text-shadow: var(--text-shad);
+        font-size: var(--fw3);
+    }
+    
+#blob-button-one:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 0.5s ease-in-out;
+    }
+
   
   
 
