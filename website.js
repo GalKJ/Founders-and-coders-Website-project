@@ -1,8 +1,25 @@
+// Section one
+
+// Select Elements
+const blobButtonOne = document.querySelector('#blob-button-one');
+const blobOne = document.querySelector('#radius1');
+
+// Add event listener to blob button with logic to toggle visibility of element
+blobButtonOne.addEventListener('click', () => {
+    if (blobOne.style.visibility === "visible") {
+        blobOne.style.visibility = "hidden";
+      } else {
+        blobOne.style.visibility = "visible";
+      }
+});
+
 // Carousel
+
+// Select elements
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 
-// Buttons
+// Select Buttons
 const prevBtn = document.querySelector('#prev-btn');
 const nextBtn = document.querySelector('#next-btn');
 
