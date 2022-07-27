@@ -1,7 +1,74 @@
+:root {
+/* Custom Properties */
+/* Typography variables */
+    --letter-spacing: 0.1rem;
+    --fs: 1rem;
+    --font-fam: "Jost";
+    --paragraph-fs: 1.1rem;
+ /* Font weight variables */
+    --fw1: 100;
+    --fw2: 200;
+    --fw3: 300;
+/* Font effect variables  */
+    --text-shad: 0 0 10px #ffffff, 2px 2px 1px rgba(255, 255, 255, 0.1);
+/* Layout variables */
+    --max-width: 90%;
+    }
+
+    html {
+    font-size: var(--fs);
+    font-family: var(--font-fam), Arial, Helvetica, sans-serif;
+    letter-spacing: var(--letter-spacing);
+    line-height: 1.6;
+  }
+
+body {
+    /* max-width: 90vw; */
+    margin: auto;
+    
+  }
+
+/* Element rules */
+#first-section {
+    min-height: 100vh;
+    background-color: hsla(160, 3%, 88%, 0.53);
+}
+
 header {
     display: flex;
     justify-content: center;
 }
+
+h1 {
+    font-weight: var(--fw3);
+}
+
+h2 {
+    font-weight: var(--fw3)
+}
+
+p {
+    font-size: var(--paragraph-fs);
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+#intro-paragraphs {
+    
+
+}
+
+#intro-paragraphs::first-letter {
+    font-size: 120%;
+    color: hsl(81, 20%, 0%);
+  }
+
+#second-section {
+    min-height: 100vh;
+    background-color: aqua;
+}
+  
+
 
 /* Carousel styles */
 .carousel-container {
