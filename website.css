@@ -36,6 +36,7 @@ body {
     background-color: hsla(160, 3%, 88%, 0.53);
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: center;
@@ -53,16 +54,69 @@ h2 {
     text-shadow: var(--text-shad);
 }
 
+/* Intro paragraphs */
 p {
     font-size: var(--paragraph-fs);
     max-width: var(--max-width);
     margin: auto;
 }
 
-#intro-paragraphs::first-letter {
-    font-size: 120%;
-    color: hsl(81, 20%, 0%);
+#intro-paragraph-one::first-letter {
+  font-size: 130%;
+  color: hsl(81, 20%, 0%);
+}
+
+#intro-paragraph-container {
+    max-width: var(--max-width);
+    margin: auto;
+    overflow: hidden;
+    
   }
+
+/* Paragraph animations */
+.paragraphs-one-three {
+  visibility: hidden;
+}
+
+#intro-paragraph-two {
+  visibility: hidden;
+}
+
+.slide-r-l {
+    animation-duration: 2s;
+    animation-name: sliderl;
+}
+  
+  @keyframes sliderl {
+    from {
+      transform: translateX(100%);
+      
+    }
+  
+    to {
+      transform: translateX(0%);
+      
+    }
+  }
+
+.slide-l-r {
+    animation-duration: 2s;
+    animation-name: slidelr;
+}
+  
+  @keyframes slidelr {
+    from {
+      transform: translateX(-100%);
+      
+    }
+  
+    to {
+      transform: translateX(0%);
+      
+    }
+  }
+  
+
 
 #blob-1 {
     display: flex;
