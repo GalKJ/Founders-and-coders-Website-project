@@ -21,6 +21,7 @@
     font-family: var(--font-fam), Arial, Helvetica, sans-serif;
     letter-spacing: var(--letter-spacing);
     line-height: 1.6;
+    scroll-behavior: smooth;
   }
 
 body {
@@ -183,8 +184,28 @@ p {
     }
   }
 
+/* Blob section */
+
+#grid-container-blob {
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-areas: "left middle right" "l-empty m-empty r-empty";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+#blob-one{
+  grid-area: right;
+  justify-self: center;
+  align-self: center;
+}
+
 #blob-button-div {
-    /* put blob and button in grid */
+    grid-area: left;
+    justify-self: center;
+    align-self: center;
 }
 
 #blob-button-one {
@@ -205,6 +226,15 @@ p {
         transform: scale(1.03);
         transition: all 0.5s ease-in-out;
     }
+
+#section-two-link {
+  grid-area: middle;
+  justify-self: center;
+  align-self: center;
+  color: hotpink;
+  cursor: pointer;
+  
+}
 
   
   
