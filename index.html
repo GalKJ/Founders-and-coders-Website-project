@@ -21,12 +21,12 @@
   </head>
   <body>
     <section id="first-section">
-      <header>
+      <header id="project-title">
         <h1>Website Project</h1>
       </header>
 
-      <header>
-        <h2 id="welcome">Welcome to my website.</h2>
+      <header id="welcome">
+        <h2>Welcome to my website.</h2>
       </header>
 
       <div id="intro-paragraph-container">
@@ -82,45 +82,124 @@
       </div>
     </section>
 
+    <!-- Second section -->
     <div id="second-section">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-      expedita quaerat maiores ab molestias quasi nobis rem sed dolorem tenetur
-      amet, inventore eum quidem totam debitis rerum. Inventore architecto iste,
-      officiis eveniet, necessitatibus et quas soluta quasi harum qui minima
-      sint deleniti vitae odit exercitationem eaque! Ratione hic,
-      necessitatibus, et inventore doloribus quo, sunt debitis id ullam quod
-      consectetur architecto quisquam aperiam sapiente labore esse! Nihil fugit
-      natus exercitationem cupiditate consectetur ipsam tempore soluta
-      doloremque quae. Aspernatur alias, incidunt aliquid neque aperiam quasi
-      unde sapiente vel earum nemo excepturi assumenda facilis saepe mollitia
-      sint, maxime tempore ullam voluptas dolor error provident necessitatibus
-      pariatur doloremque distinctio? Aperiam dolore voluptates a ex placeat
-      adipisci illum similique molestias praesentium quod nam saepe id iste sint
-      explicabo atque, temporibus quaerat. Saepe, ducimus? Deserunt laboriosam
-      earum minus aliquam dolorum dolore facilis numquam, consectetur expedita
-      reiciendis libero sunt molestiae adipisci omnis tempore corrupti, qui
-      dignissimos dolor. Consectetur explicabo soluta maxime atque error,
-      perspiciatis enim repellendus tempore sunt ratione corrupti eaque
-      similique perferendis eveniet aperiam eos praesentium qui, consequuntur
-      delectus quia minima nihil placeat! Itaque, similique perspiciatis
-      laudantium impedit ex ullam neque autem rerum voluptas quas libero nostrum
-      laborum amet. Quod dolorum animi itaque dolorem laboriosam minus.
+      <!-- Header -->
+      <header id="section-two-header">
+        <h2>Progress through projects</h2>
+      </header>
+
+      <!-- Section two grid -->
+      <div id="second-section-grid-container">
+        <div id="section-two-paragraph">
+          <p>
+            Hi again! Below is a carousel of the projects I've built for the
+            Founders and Coders application, below that are some handy links
+            that take you to my public Github repositories and behind all that
+            is a lovely radial gradiant.
+          </p>
+        </div>
+        <!-- Carousel -->
+        <div class="carousel-container" id="carousel-grid-container">
+          <h2 id="carousel-header">Project Carousel</h2>
+          <i class="fa-solid fa-arrow-left" id="prev-btn"></i>
+          <i class="fa-solid fa-arrow-right" id="next-btn"></i>
+          <div class="carousel-slide">
+            <img src="/imgs/fruit shop sc 700.jpg" id="last-clone" alt="" />
+            <img src="/imgs/tribute sc 700.jpg" alt="" />
+            <img src="/imgs/comment box sc 700.jpg" alt="" />
+            <img src="/imgs/fruit shop sc 700.jpg" alt="" />
+            <img src="/imgs/Etch-a-sketch header added 700.jpg" alt="" />
+            <img src="/imgs/tribute sc 700.jpg" id="first-clone" alt="" />
+          </div>
+        </div>
+        <!-- End of carousel -->
+
+        <!-- Github repo links -->
+        <a
+          href="https://github.com/d0g3bl2/Founders-and-coders-Tribute-page.git"
+          id="repo-link-tribute"
+          class="github-links"
+          >Tribute page</a
+        >
+        <a
+          href="https://github.com/d0g3bl2/Founders-and-coders-Project-gallery.git"
+          id="repo-link-project"
+          class="github-links"
+          >Project gallery</a
+        >
+        <a
+          href="https://github.com/d0g3bl2/Founders-and-coders-Comment-box.git"
+          id="repo-link-comment"
+          class="github-links"
+          >Comment box</a
+        >
+        <a
+          href="https://github.com/d0g3bl2/Founders-and-coders-Fruit-shop.git"
+          id="repo-link-fruit"
+          class="github-links"
+          >Fruit shop</a
+        >
+        <a
+          href="https://github.com/d0g3bl2/Founders-and-coders-Website-project.git"
+          id="repo-link-website"
+          class="github-links"
+          >Website</a
+        >
+        <a
+          href="https://github.com/d0g3bl2/Founders-and-Coders-Feature-project.git"
+          id="repo-link-feature"
+          class="github-links"
+          >Feature</a
+        >
+        <a href="#third-section" id="section-three-link" class="github-links"
+          >Next page pls</a
+        >
+      </div>
     </div>
 
-    <!-- Carousel -->
-    <!-- <div class="carousel-container">
-      <i class="fa-solid fa-arrow-left" id="prev-btn"></i>
-      <i class="fa-solid fa-arrow-right" id="next-btn"></i>
-      <div class="carousel-slide">
-        <img src="/imgs/fruit shop sc 700.jpg" id="last-clone" alt="" />
-        <img src="/imgs/tribute sc 700.jpg" alt="" />
-        <img src="/imgs/comment box sc 700.jpg" alt="" />
-        <img src="/imgs/fruit shop sc 700.jpg" alt="" />
-        <img src="/imgs/Etch-a-sketch header added 700.jpg" alt="" />
-        <img src="/imgs/tribute sc 700.jpg" id="first-clone" alt="" />
+    <!-- Third section -->
+
+    <div id="third-section">
+      <div id="third-section-grid-container">
+        <!-- Skills and likes cards -->
+        <section class="list-card" id="hard-skills">
+          <h3>Hard skills I've learned</h3>
+          <ul>
+            <li>Responsive design</li>
+            <li>Bubbling and capture</li>
+            <li>Looping</li>
+            <li>String, object methods</li>
+            <li>Functions</li>
+          </ul>
+        </section>
+
+        <section class="list-card" id="soft-skills">
+          <h3>Soft skills I've learned</h3>
+          <ul>
+            <li>Rubber ducking</li>
+            <li>Regular breaks</li>
+            <li>Sleeping on it</li>
+            <li>Keeping calm</li>
+            <li>Keep physically active</li>
+          </ul>
+        </section>
+
+        <section class="list-card" id="likes">
+          <h3>Things I like😍</h3>
+          <ul>
+            <li>Geometry dash</li>
+            <li>Fixed gear cycling</li>
+            <li>OMFG dogs</li>
+            <li>Cycle touring</li>
+            <li>Learning</li>
+          </ul>
+        </section>
       </div>
-    </div> -->
-    <!-- End of carousel -->
+    </div>
+
+    <div id="forth-section"></div>
+
     <script src="/website.js"></script>
   </body>
 </html>

@@ -38,7 +38,7 @@ body {
 }
 
 /* Header */
-header {
+#project-title {
     display: flex;
     justify-content: center;
 }
@@ -51,7 +51,13 @@ h2 {
     font-weight: var(--fw3)
 }
 
+h3 {
+  font-weight: var(--fw3);
+}
+
 #welcome {
+    display: flex;
+    justify-content: center;
     text-shadow: var(--text-shad);
 }
 
@@ -233,7 +239,7 @@ p {
   align-self: center;
   color: hotpink;
   cursor: pointer;
-  
+
 }
 
   
@@ -242,14 +248,99 @@ p {
 /* Second section */
 #second-section {
     min-height: var(--section-height);
-    background-color: aqua;
+    background: repeating-radial-gradient(
+    darkslategray,
+    violet,
+    darkgreen,
+    coral,
+    rgb(131, 231, 201),
+    rgba(238, 230, 195, 0.253),
+    grey
+  );
 }
+
+#second-section-grid-container {
+    max-width: var(--max-width);
+    margin: auto;
+    display: grid;
+    grid-template-areas: "copy copy copy" 
+                         "fruit1 fruit2 fruit3"
+                         "tribute project comment"
+                         "fruitshop website feature"
+                         "emptyl section3 emptyr";
+    grid-template-columns: minmax(1fr 1fr 1fr);
+    grid-template-rows: minmax(1fr 1fr 1fr 1fr 1fr);
+  
+  }
+
+#section-two-header {
+  display: flex;
+  justify-content: center;
+}
+
+#section-two-paragraph {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+#carousel-grid-container {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+#carousel-header {
+  text-align: center;
+}
+
+.github-links {
+  margin: 1rem;
+}
+
+#repo-link-tribute {
+  grid-area: tribute;
+  justify-self: center;
+  align-self: center;
+}
+
+#repo-link-project {
+  grid-area: project;
+  justify-self: center;
+  align-self: center;
+}
+
+#repo-link-comment {
+  grid-area: comment;
+  justify-self: center;
+  align-self: center;
+}
+
+#repo-link-fruit {
+  grid-area: fruitshop;
+  justify-self: center;
+  align-self: center;
+}
+
+#repo-link-website {
+  grid-area: website;
+  justify-self: center;
+  align-self: center;
+}
+
+#repo-link-feature {
+  grid-area: feature;
+  justify-self: center;
+  align-self: center;
+}
+
+#section-three-link {
+  grid-area: section3;
+  justify-self: center;
+}
+
   
 
 
 /* Carousel styles */
 .carousel-container {
-    border: 2px solid rgb(115, 69, 255);
+    /* border: 2px solid rgb(115, 69, 255); */
     width: 700px;
     margin: auto;
     overflow: hidden;
@@ -284,4 +375,30 @@ p {
 }
 /* End of carousel styles */
 
+/* Section three */
 
+#third-section {
+  min-height: var(--section-height);
+  background: linear-gradient(90deg, aqua, lime);
+
+}
+
+#third-section-grid-container {
+  max-width: var(--max-width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* #hard-skills {
+  grid-area: hard;
+  justify-self: start;
+  align-self: end;
+} */
+
+/* #soft-skills {
+  grid-area: soft;
+  justify-self: end;
+  align-self: end;
+} */
