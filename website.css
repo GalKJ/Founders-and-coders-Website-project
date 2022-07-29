@@ -268,8 +268,8 @@ p {
                          "tribute project comment"
                          "fruitshop website feature"
                          "emptyl section3 emptyr";
-    grid-template-columns: minmax(1fr 1fr 1fr);
-    grid-template-rows: minmax(1fr 1fr 1fr 1fr 1fr);
+    grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+    grid-template-rows: 1fr minmax(min-content, max-content) 1fr 1fr 1fr;
   
   }
 
@@ -340,8 +340,7 @@ p {
 
 /* Carousel styles */
 .carousel-container {
-    /* border: 2px solid rgb(115, 69, 255); */
-    width: 700px;
+    max-width: 700px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -349,8 +348,13 @@ p {
 
 .carousel-slide {
     display: flex;
-    width: 700px;
+    max-width: 700px;
 }
+
+/* img {
+  max-width: inherit;
+  min-width: inherit; 
+} */
 
 #prev-btn {
     position: absolute;
@@ -427,6 +431,13 @@ p {
   
 }
 
+#section-four-link {
+  grid-area: 3 / 2 / 4 / 3;
+  justify-self: start;
+  align-self: end;
+  margin-bottom: 3.5rem;
+}
+
 ul{
   list-style-type: none;
   padding: 0;
@@ -437,7 +448,7 @@ ul{
 
 #forth-section {
   min-height: var(--section-height);
-  background: white;
+  background: grey;
 }
 
 #forth-section-grid-container {
@@ -446,6 +457,10 @@ ul{
     align-items: center;
     justify-items: center;
 }
+
+/* #forth-section-header {
+  justify-self: center;
+} */
 
 canvas {
   border: 20px solid;
@@ -521,4 +536,8 @@ canvas.shake {
 .buttons {
   display: flex;
   justify-content: center;
+}
+
+#top-of-page {
+  margin: 1rem;
 }
