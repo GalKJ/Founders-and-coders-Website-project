@@ -1,0 +1,99 @@
+:root {
+    --letter-spacing: 0.1rem;
+    /* The default text size in browsers is 16px. So, the default size of 1rem is 16px. */
+    --fs: 1rem;
+    }
+
+html {
+    font-size: var(--fs);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: var(--letter-spacing);
+  }
+  
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: white;
+  }
+
+h1 {
+    margin: 0;
+}
+
+  canvas {
+    border: 20px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      45deg,
+      rgba(32, 56, 19, 0.942) 6%,
+      rgba(180, 129, 58, 0.9419117988992471) 14%,
+      rgba(49, 170, 95, 1) 30%,
+      rgba(199, 102, 42, 1) 42%,
+      rgba(34, 233, 110, 1) 56%,
+      rgba(253, 29, 29, 1) 64%,
+      rgba(0, 168, 255, 1) 76%,
+      rgba(149, 69, 90, 0.8298669809720763) 84%,
+      rgba(22, 205, 160, 1) 92%
+    );
+
+    /* Set the width and height to half the actual size so it doesn't look pixelated */
+    width: 800px;
+    height: 500px;
+    background: white;
+  }
+
+  canvas.shake {
+    animation: shake 0.5s linear 1;
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+#shake-button {
+    color: white;
+    background: linear-gradient(
+        45deg,
+        rgba(32, 56, 19, 0.942) 6%,
+        rgba(180, 129, 58, 0.9419117988992471) 14%,
+        rgba(49, 170, 95, 1) 30%,
+        rgba(199, 102, 42, 1) 42%,
+        rgba(34, 233, 110, 1) 56%,
+        rgba(253, 29, 29, 1) 64%,
+        rgba(0, 168, 255, 1) 76%,
+        rgba(149, 69, 90, 0.8298669809720763) 84%,
+        rgba(22, 205, 160, 1) 92%
+      );
+    padding: 1rem;
+    border: 0;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}

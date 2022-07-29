@@ -162,8 +162,12 @@
 
     <div id="third-section">
       <div id="third-section-grid-container">
+        <header id="third-section-header">
+          <h2>Hard & soft skills & likes.</h2>
+        </header>
+
         <!-- Skills and likes cards -->
-        <section class="list-card" id="hard-skills">
+        <section id="hard-skills">
           <h3>Hard skills I've learned</h3>
           <ul>
             <li>Responsive design</li>
@@ -174,7 +178,7 @@
           </ul>
         </section>
 
-        <section class="list-card" id="soft-skills">
+        <section id="soft-skills">
           <h3>Soft skills I've learned</h3>
           <ul>
             <li>Rubber ducking</li>
@@ -185,7 +189,7 @@
           </ul>
         </section>
 
-        <section class="list-card" id="likes">
+        <section id="likes">
           <h3>Things I like😍</h3>
           <ul>
             <li>Geometry dash</li>
@@ -195,11 +199,29 @@
             <li>Learning</li>
           </ul>
         </section>
+
+        <section id="whale-paragraph">
+          <p>just another excuse for a gradiant 🐋</p>
+        </section>
       </div>
     </div>
 
-    <div id="forth-section"></div>
+    <div id="forth-section">
+      <div id="forth-section-grid-container">
+        <header>
+          <h2>Feature Project</h2>
+        </header>
+
+        <div class="canvasWrap">
+          <canvas width="1600" height="1000" id="etch-a-sketch"></canvas>
+          <div class="buttons">
+            <button id="shake-button" class="shake">Shake!</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="/website.js"></script>
+    <script src="/Feature/feature.js"></script>
   </body>
 </html>
