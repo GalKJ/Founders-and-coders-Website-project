@@ -1,5 +1,11 @@
 # Founders-and-coders-Website-project
 
+## Website project built for application to the Founders & Coders pre-apprenticeship program.
+
+The website tells the user a little about me as a developer and shows off some of the skills I have learnt so far. 
+
+The site can be viewed here 
+
 ## Website section approach
 
 I wanted to chop the website into distinct sections and decided to do that using a `min-width: 100vh;`. This way I would be able to keep the sections of the website clear.
